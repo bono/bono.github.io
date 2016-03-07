@@ -1,0 +1,6 @@
+*.sublime-*
+.DS_Store
+.jekyll
+.bundle
+.sass-cache
+Gemfile.lock

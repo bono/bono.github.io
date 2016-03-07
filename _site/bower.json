@@ -1,0 +1,21 @@
+{
+  "name": "bono.github.io",
+  "description": "**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))",
+  "main": "index.js",
+  "authors": [
+    "Ganesha <reekoheek@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bono/bono.github.io",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "naked": "xinix-technology/naked#^1.1.7"
+  }
+}

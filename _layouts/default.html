@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/naked/css/naked.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <script src="{{ site.baseurl }}/js/jquery-1.12.1.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav-menu">
+      <div class="wrapper">
+        <div class="row">
+          <h1 class="brand">
+            <a href="/">
+              <span class="logo">
+                <img src="{{ site.avatar }}" alt="{{ site.name }}">
+              </span>
+              <span class="logo-desc">{{ site.name }}</span>
+            </a>
+          </h1>
+          <nav>
+            <a href="{{ site.baseurl }}/docs">Dokumentasi</a>
+            <!-- <a href="{{ site.baseurl }}/blog">Blog</a> -->
+            <a href="https://github.com/xinix-technology/bono">Github</a>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    {{ content }}
+
+    <footer class="footer">
+      Didukung oleh <a href="http://sagara.id" target="blank">Xinix Technology</a>
+    </footer>
+
+    {% include analytics.html %}
+  </body>
+</html>

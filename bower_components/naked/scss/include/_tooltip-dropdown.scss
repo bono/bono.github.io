@@ -1,0 +1,215 @@
+ul.menu {
+	text-align: left;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: table;
+
+	> li {
+		float: left;
+		display: block;
+	}
+
+	li {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		margin: 0;
+
+		a {
+			color: #333;
+			display: block;
+			clear: both;
+			white-space: nowrap;
+			padding: 3px 0;
+			margin: 0px 15px;
+		}
+
+		&:hover,
+		&.selected {
+			background: #f5f5f5;
+
+			ul {
+				display: block;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+
+	ul.context-menu {
+		margin: 0;
+		z-index: 9;
+
+		li {
+			&.first-child,
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+
+			a {
+				margin: 0;
+				padding: 4px 20px;
+			}
+
+			&.collapse {
+				.xn {
+					width: auto;
+					position: absolute;
+				    top: 0;
+				    line-height: 30px;
+				}
+
+				ul {
+					display: none;
+					// display: inline-block;
+					z-index: 2;
+				    width: 100%;
+				    border: 1px solid #ddd;
+				    position: absolute;
+				    padding: 0;
+				}
+
+				&.left {
+					ul {
+					    right: 100%;
+					    top: 0;
+					    bottom: initial;
+					    left: initial;
+					}
+
+					.xn {
+						margin-right: 5px;
+			    		left: 8px;
+					}
+				}
+
+				&.right {
+					ul {
+						top: 0;
+					    left: 100%;
+					    bottom: initial;
+					    right: initial;
+					}
+
+					.xn {
+						margin-left: 5px;
+					    right: 8px;
+					}
+				}
+
+				&:hover,
+				&.hover,
+				&.selected {
+					ul {
+						display: inline-block;
+					}
+				}
+			}
+
+		}
+	}
+
+	.collapsible {
+		> a {
+			position: relative;
+
+			i.xn {
+				margin-left: 5px;
+				margin-right: 0;
+    			width: auto;
+			}
+		}
+
+		&.up {
+			ul {
+			    top: initial;
+			    bottom: 100%;
+			    right: initial;
+			    left: initial;
+			}
+		}
+
+		&.down {
+			ul {
+			    bottom: initial;
+			    top: 100%;
+			    right: initial;
+			    left: initial;
+			}
+		}
+
+		ul {
+			li {
+				display: block;
+				background: #fff;
+
+				&.divider {
+					border-top: 1px solid #{$border-color};
+					padding: 0px;
+					overflow: hidden;
+				    margin: 8px 0;
+				}
+
+				&:hover,
+				&.hover,
+				&.selected {
+					ul {
+						display: block;
+						left: 100%;
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.tooltip-text {
+	position: relative;
+	color: black;
+	font-weight: 300;
+
+	.tooltip {
+		background: #F5F5C0;
+		color: black;
+		position: absolute;
+		padding: 2px 3px 2px 3px;
+		display: none;
+		text-align: center;
+		width: 100%;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		-ms-border-radius: 7px;
+		-o-border-radius: 7px;
+		border-radius-: 7px;
+
+		&.down {
+			top: 100%;
+			left: 0;
+		}
+
+		&.top {
+			bottom: 100%;
+			left: 0;
+		}
+
+		&.left {
+			right: 100%;
+			top: 10%;
+		}
+
+		&.right {
+			left: 100%;
+			top: 10%;
+		}
+	}
+}
+.tooltip-text:hover {
+	.tooltip {
+		display: block;
+	}
+}

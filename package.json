@@ -1,0 +1,22 @@
+{
+  "name": "bono.github.io",
+  "version": "1.0.0",
+  "description": "**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bono/bono.github.io.git"
+  },
+  "author": "Ganesha <reekoheek@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bono/bono.github.io/issues"
+  },
+  "homepage": "https://github.com/bono/bono.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

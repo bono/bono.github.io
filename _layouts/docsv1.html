@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div id="main" role="main" class="content doc">
+  <ul class="doc-menu">
+    <li><a href="{{ site.baseurl }}/docs/1.0">Pengenalan</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/1.0/getting-started.html">Memulai</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/1.0/getting-started.html">Routing</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/1.0/getting-started.html">Provider</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/1.0/getting-started.html">Middleware</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/1.0/getting-started.html">Tema dan Template</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/1.0/getting-started.html">Konfigurasi</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/1.0/getting-started.html">Norm (Pustaka)</i></a></li>
+  </ul>
+
+  <div class="wrapper">
+    <article class="page">
+
+      <h1>{{ page.title }}</h1>
+      <hr>
+
+      <div class="entry">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</div>
+
+<script>
+  $('.logo-desc').append('<span class="version">1.0</span>');
+</script>
