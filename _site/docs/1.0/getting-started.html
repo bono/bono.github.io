@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="/bower_components/naked/css/naked.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
     <link rel="alternate" type="application/rss+xml" title="Bono - Pengembangan web secara cepat" href="/feed.xml" />
 
     <script src="/js/jquery-1.12.1.min.js"></script>
@@ -55,12 +56,12 @@
   <ul class="doc-menu">
     <li><a href="/docs/1.0">Pengenalan</i></a></li>
     <li><a href="/docs/1.0/getting-started.html">Memulai</i></a></li>
-    <li><a href="/docs/1.0/getting-started.html">Routing</i></a></li>
-    <li><a href="/docs/1.0/getting-started.html">Provider</i></a></li>
-    <li><a href="/docs/1.0/getting-started.html">Middleware</i></a></li>
-    <li><a href="/docs/1.0/getting-started.html">Tema dan Template</i></a></li>
-    <li><a href="/docs/1.0/getting-started.html">Konfigurasi</i></a></li>
-    <li><a href="/docs/1.0/getting-started.html">Norm (Pustaka)</i></a></li>
+    <li><a href="/docs/1.0/routing.html">Routing</i></a></li>
+    <li><a href="/docs/1.0/providers.html">Provider</i></a></li>
+    <li><a href="/docs/1.0/middlewares.html">Middleware</i></a></li>
+    <li><a href="/docs/1.0/themes-and-templates.html">Tema dan Template</i></a></li>
+    <li><a href="/docs/1.0/configurations.html">Konfigurasi</i></a></li>
+    <li><a href="/norm.html">Norm (Pustaka)</i></a></li>
   </ul>
 
   <div class="wrapper">
@@ -82,6 +83,18 @@
 <li>PHP 5.4+</li>
 <li>Composer</li>
 </ul>
+
+<h3>Instalasi dengan Yeoman (yo)</h3>
+
+<hr>
+
+<p>Kamu bisa menginisialisasi proyek dengan menggunakan Yeoman. Install terlebih dahulu Yeoman (jika belum) dan kemudian install generator-bono-1. </p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno">1</span> npm install -g yo
+<span class="lineno">2</span> npm install -g generator-bono-1
+<span class="lineno">3</span> mkdir my-project
+<span class="lineno">4</span> <span class="nb">cd </span>my-project
+<span class="lineno">5</span> yo generator-bono-1</code></pre></div>
 
       </div>
     </article>
