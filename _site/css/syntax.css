@@ -71,7 +71,7 @@
 figure.highlight, div.highlight {
   /*border: 1px solid #ccc;*/
   padding: 10px;
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.6);
   -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.6);
   box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.6);
