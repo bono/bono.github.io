@@ -7,16 +7,34 @@
     <loc>/about/</loc>
   </url>
   <url>
+    <loc>/docs/2.0/bundles/</loc>
+  </url>
+  <url>
+    <loc>/docs/2.0/configurations/</loc>
+  </url>
+  <url>
     <loc>/docs/1.0/getting-started/</loc>
+  </url>
+  <url>
+    <loc>/docs/2.0/getting-started/</loc>
   </url>
   <url>
     <loc>/</loc>
   </url>
   <url>
+    <loc>/docs/</loc>
+  </url>
+  <url>
     <loc>/docs/1.0/</loc>
   </url>
   <url>
-    <loc>/docs/</loc>
+    <loc>/docs/2.0/</loc>
+  </url>
+  <url>
+    <loc>/docs/2.0/middlewares/</loc>
+  </url>
+  <url>
+    <loc>/docs/2.0/routing/</loc>
   </url>
   <url>
     <loc>/bower_components/naked/examples/alert.html</loc>

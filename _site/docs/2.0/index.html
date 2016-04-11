@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <title>Memulai – Bono – Pengembangan web secara cepat</title>
+    <title>Pengenalan – Bono – Pengembangan web secara cepat</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -15,8 +15,8 @@
     <meta name="author" content="Bono" />
 
     
-    <meta property="og:title" content="Memulai" />
-    <meta property="twitter:title" content="Memulai" />
+    <meta property="og:title" content="Pengenalan" />
+    <meta property="twitter:title" content="Pengenalan" />
     
 
     <!--[if lt IE 9]>
@@ -54,47 +54,59 @@
 
     <div id="main" role="main" class="content doc">
   <ul class="doc-menu">
-    <li><a href="/docs/1.0/">Pengenalan</i></a></li>
-    <li><a href="/docs/1.0/getting-started/">Memulai</i></a></li>
-    <li><a href="/docs/1.0/routing/">Routing</i></a></li>
-    <li><a href="/docs/1.0/providers/">Provider</i></a></li>
-    <li><a href="/docs/1.0/middlewares/">Middleware</i></a></li>
-    <li><a href="/docs/1.0/themes-and-templates/">Tema dan Template</i></a></li>
-    <li><a href="/docs/1.0/configurations/">Konfigurasi</i></a></li>
+    <li><a href="/docs/2.0/">Pengenalan</i></a></li>
+    <li><a href="/docs/2.0/getting-started/">Memulai</i></a></li>
+    <li><a href="/docs/2.0/middlewares/">Middleware</i></a></li>
+    <li><a href="/docs/2.0/bundles/">Bundle</i></a></li>
+    <li><a href="/docs/2.0/routing/">Routing</i></a></li>
+    <!-- <li><a href="/docs/2.0/themes-and-templates/">Tema dan Template</i></a></li> -->
+    <li><a href="/docs/2.0/configurations/">Konfigurasi</i></a></li>
     <li><a href="/norm/">Norm (Pustaka)</i></a></li>
   </ul>
 
   <div class="wrapper">
     <article class="page">
 
-      <h1>Memulai</h1>
+      <h1>Pengenalan</h1>
       <hr>
 
       <div class="entry">
-        <p>Untuk memulai menggunakan Bono, anda harus menyediakan beberapa kebutuhan dasar di bawah ini.</p>
+        <p>Bono adalah sebuah framework aplikasi web yang cepat dan tepat guna untuk pengembangan aplikasi web.</p>
 
-<h3>Kebutuhan Server</h3>
+<h3>Kenapa Bono?</h3>
 
-<hr>
-
-<p>Bono mengharuskan beberapa kebutuhan dasar yang harus dipenuhi:</p>
+<hr/>
 
 <ul>
-<li>PHP 5.4+</li>
-<li>Composer</li>
+<li>Membangun aplikasi berbasis web lebih cepat dari biasanya,</li>
+<li>Menambahkan modul baru dengan cepat dengan fitur scaffold,</li>
+<li>Menggunakan standar template untuk kebutuhan SCRUD (search, create, update, dan delete),</li>
+<li>Tampilan yang dinamis dan fungsi-fungsi bantuan untuk membuat API dan halaman web.</li>
 </ul>
 
-<h3>Instalasi dengan Yeoman (yo)</h3>
+<h3>Konsep</h3>
 
-<hr>
+<hr/>
 
-<p>Kamu bisa menginisialisasi proyek dengan menggunakan Yeoman. Install terlebih dahulu Yeoman (jika belum) dan kemudian install generator-bono-1. </p>
+<p>Beberapa hal di bawah ini adalah konsep-konsep yang mendukung dan menyusun Bono.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno">1</span> npm install -g yo
-<span class="lineno">2</span> npm install -g generator-bono-1
-<span class="lineno">3</span> mkdir my-project
-<span class="lineno">4</span> <span class="nb">cd </span>my-project
-<span class="lineno">5</span> yo generator-bono-1</code></pre></div>
+<h4>Middleware</h4>
+
+<p>Middleware dapat menambahkan kemampuan Request Handling. Contoh: session, autentikasi, dll.</p>
+
+<p>Sejak versi 2.0, Bono menghilangkan Provider. Fungsionalitas yang biasanya diimplementasi di Bono 1.0 di Provider dialihkan ke implementasi menggunakan Middleware.</p>
+
+<h4>Bundle</h4>
+
+<p>Pada versi 2.0, Bono memperkenalkan konsep Bundle. Bundle berlaku seperti layaknya sub aplikasi. Bahkan aplikasi utama pada dasarnya di-compose dalam wujud Bundle. </p>
+
+<p>Bundle juga menggantikan keberadaan Controller pada Bono 1.0.</p>
+
+<p>Bundle dapat menambahkan kemampuan pada aplikasi berbasis Bono. Contoh: modul chat, mesin CMS dan blog, forum dan komunitas, dll.</p>
+
+<h4>Routing</h4>
+
+<p>Routing adalah kemampuan pada Bono untuk mendefinisikan pengalihan Request untuk ditangani oleh spesifik fungsi berdasarkan pola URI.</p>
 
       </div>
     </article>
@@ -102,8 +114,8 @@
 </div>
 
 <script>
-  $('.logo-desc').append('<span class="version">1.0</span>');
-  $('.nav-menu nav').prepend('<a href="/docs/2.0/">v2</a>');
+  $('.logo-desc').append('<span class="version">2.0</span>');
+  $('.nav-menu nav').prepend('<a href="/docs/1.0/">v1</a>');
 </script>
 
     <footer class="footer">
@@ -120,8 +132,8 @@
 
 		ga('create', 'UA-63139153-1', 'auto');
 		ga('send', 'pageview', {
-		  'page': '/docs/1.0/getting-started/',
-		  'title': 'Memulai'
+		  'page': '/docs/2.0/',
+		  'title': 'Pengenalan'
 		});
 	</script>
 	<!-- End Google Analytics -->

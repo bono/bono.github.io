@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div id="main" role="main" class="content doc">
+  <ul class="doc-menu">
+    <li><a href="{{ site.baseurl }}/docs/2.0/">Pengenalan</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/2.0/getting-started/">Memulai</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/2.0/middlewares/">Middleware</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/2.0/bundles/">Bundle</i></a></li>
+    <li><a href="{{ site.baseurl }}/docs/2.0/routing/">Routing</i></a></li>
+    <!-- <li><a href="{{ site.baseurl }}/docs/2.0/themes-and-templates/">Tema dan Template</i></a></li> -->
+    <li><a href="{{ site.baseurl }}/docs/2.0/configurations/">Konfigurasi</i></a></li>
+    <li><a href="{{ site.baseurl }}/norm/">Norm (Pustaka)</i></a></li>
+  </ul>
+
+  <div class="wrapper">
+    <article class="page">
+
+      <h1>{{ page.title }}</h1>
+      <hr>
+
+      <div class="entry">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</div>
+
+<script>
+  $('.logo-desc').append('<span class="version">2.0</span>');
+  $('.nav-menu nav').prepend('<a href="{{ site.baseurl }}/docs/1.0/">v1</a>');
+</script>
